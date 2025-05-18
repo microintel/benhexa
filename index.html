@@ -212,7 +212,7 @@
               KSEAB web portal   <a>https://kseab.karnataka.gov.in</a> </p>
 </div>
 		
-                        <p><a class="btn btn-warning" href="https://microintel.github.io/microintel/v1/micropro.html">back</a></p>
+                        <p><a class="btn btn-warning" href="#">back</a></p>
         
 	
 
@@ -237,11 +237,14 @@ may have crept in the results being published on NET. The results published on n
                 <p>Designed, Developed &amp; Hosted by National Informatics Centre, Karnataka</p>
 				</div>
 				
+				<center><button onclick="shr()" style="background-color:transparent;color:#ABA9A9;border:1px solid grey;"> share</div></button>
+				
           
             
 			
                
 	</div>
+	<br>
 
 <script type="text/javascript">
 
@@ -307,6 +310,17 @@ function finmark(m) {
   return m >= 219 ? "Pass" : "Fail";
 }
 
+
+function shr() {
+  if (navigator.share) {
+    navigator.share({
+      title: "BenHexa",
+      url: location.href
+    });
+  } else {
+    alert("Your browser doesn't support earing . Copy this ink: \n\n" + location.href);
+  }
+}
 </script>
 <script src="//cdn.jsdelivr.net/npm/eruda"></script></body><div id="eruda" style="all: initial;"></div><div class="__chobitsu-hide__" style="all: initial;"></div>
 
