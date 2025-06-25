@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flexbox;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.card-header {
+    background-color: #007bff; /* Primary color */
+}
+
+.form-control, .btn {
+    border-radius: 0.5rem; /* Rounded form inputs */
+}
+
+/*.table th {
+    background-color: #343a40;
+    color: white;
+}*/
+
+.table td {
+    vertical-align: middle;
+}
+
+.card-footer {
+    background-color: #f8f9fa; /* Light footer color */
+    border-top: 1px solid #e9ecef;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+    footer a {
+        color: #00d4ff;
+        text-decoration: none;
+    }
+
+
+.custom-link {
+    text-decoration: none;
+}
+
+    .custom-link:hover {
+        color: #ff5733; /* Change to desired color on hover */
+        text-decoration: underline; /* Add underline on hover */
+    }
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px; /* Set a fixed height for the image area */
+    padding: 10px; /* Add some padding */
+}
+
+.small-image {
+    max-width: 100px; /* Set max width for small images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-centerX {
+    flex-grow: 1; /* Allow text to grow */
+    text-align: center; /* Center the text */
+}

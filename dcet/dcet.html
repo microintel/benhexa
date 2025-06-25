@@ -1,1 +1,194 @@
-g
+<html>
+<head><title>Check Result</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="bootstrap5.min.css" rel="stylesheet">
+   <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="all.min.css" rel="stylesheet">
+    
+    <link href="checkresult.css" rel="stylesheet">
+<body>
+    <div class="container-fluid image-container">
+        <div>
+            <img src="KEA-Logo-kan.png" class="small-image">
+        </div>
+        <div class="text-centerX">
+            <h1>Government of Karnataka</h1>
+        </div>
+        <div>
+            <img src="gok.png" class="small-image">
+        </div>
+    </div>
+    <div class="container mt-1">
+        <div class="card shadow">
+            <div class="card-header text-white text-center">
+                <h3>
+                    <i class="fas fa-graduation-cap"></i>Karnataka Examinations Authority</h3>
+            </div>
+            <div class="card-body">
+                <!-- Search Form -->
+                <form  id="form1" class="row">
+
+
+
+
+          
+
+                    <div class="col-12 text-center mt-2">
+                        <span id="lblResultDisplayName" class="form-label fs-3" style="color:DarkGreen;font-size:X-Large;font-weight:bold;">DCET 2025 Examination Fake Result for Engineering Professional Course Admission</span>
+                    </div>
+                    <!-- Register Number Input -->
+                    <div class="col-md-6">
+                        <label for="registerNumber" class="form-label">
+                            <i class="far fa-id-badge"></i>Candidate Application Number
+                        </label>
+                        <input name="txtRegisterNumber" type="text" value="" id="txtRegisterNumber" class="form-control" autocomplete="Off" placeholder="Enter Appln Number">
+                        <span id="RequiredFieldValidator1" style="visibility:hidden;">*</span>
+                    </div>
+
+                    <!-- Date of Birth Input -->
+                    <div class="col-md-6">
+                        <label for="dob" class="form-label">
+                            <i class="far fa-calendar"></i>Date of Birth
+                        </label>
+                        <input name="txtDOB" type="date" value="" id="txtDOB" class="form-control" placeholder="Enter Date of Birth">
+                        <span id="RequiredFieldValidator2" style="visibility:hidden;">*</span>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="col-12 text-center mt-2">
+                        <p  onclick="sho()" class="btn btn-success">Submit</p>
+                    </div>
+                    <div class="col-12 text-center mt-2">
+                        
+                    </div>
+                    <div style="display:none;" id="Panel1">
+	
+                        <div class="mt-1 gridview-container">
+                            <div class="card shadow">
+                                <div class="card-header text-white bg-primary text-center">
+                                    <h5 class="fs-5"><i class="bi bi-table"></i>Engineering Discipline Rank</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-bordered table-striped table-hover 
+                                              table-condensed">
+                                            <tbody>
+                                                <tr class="bg-dark-subtle col-md-6">
+                                                    <td>Application Number</td>
+                                                    <td>
+                                                        <span id="Label1" class="form-label fs-6" style="font-weight:bold;" contenteditable="true">1234567890</span></td>
+                                                    <td>Name</td>
+                                                    <td>
+                                                        <span id="lblName" class="form-label fs-6" style="font-weight:bold;" contenteditable="true"> Chakli</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="table-responsive col-md-4">
+                                            <div>
+		<table class="table table-bordered table-bordered table-striped table-hover 
+                                                 table-condensed table-responsive text-center" cellspacing="0" align="Center" rules="all" border="1" id="gvCetRank" style="border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Disicpline</th><th scope="col">Rank</th>
+			</tr><tr>
+				<td>Engineering</td><td id="ran" contenteditable="true">1.0000</td>
+			</tr>
+		</tbody></table>
+	</div>
+                                        </div>
+                                        <div class="table-responsive col-md-4">
+                                            <div>
+		<table class="table table-bordered table-bordered table-striped table-hover 
+                                                        table-condensed table-responsive text-center" cellspacing="0" align="Center" rules="all" border="1" id="gvStdData" style="border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Subject Name</th><th scope="col">Correct Answers/Total Questions</th><th scope="col">&nbsp;</th>
+			</tr><tr>
+				<td>DCET-EXAM</td><td>
+                                                            <span id="gvStdData_lblMarks_0" contenteditable="true">100/100</span>
+                                                        </td><td>
+                                                            <a id="gvStdData_lnkBtnEdit_0" onclick="alert('this is fake , developed for only fun purpose')" class="custom-link" >Show Details</a>
+                                                        </td>
+			</tr>
+		</tbody></table>
+	</div>
+                                        </div>
+                                        <div class="table-responsive col-md-4">
+                                            <div>
+		<table class="table table-bordered table-bordered table-striped table-hover 
+                                                          table-condensed  table-responsive text-center" cellspacing="0" align="Center" rules="all" border="1" id="gvQEMarks" style="border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Subject Name</th><th scope="col">Obtained</th><th scope="col">Maximum</th>
+			</tr><tr>
+				<td>Qualifying Exam Marks</td><td id="dip" contenteditable="true">100</td><td>100</td>
+			</tr>
+		</tbody></table>
+	</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <h6 class="fs-6">
+                                            <span id="lblRemarks" style="font-weight:bold;"></span>
+                                        </h6>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+</div>
+                
+
+
+
+
+</form>
+            </div>
+            
+        </div>
+    </div>
+   
+    
+
+</div>
+<script type="text/javascript">
+
+function sho(){
+
+let d= document.getElementById("txtDOB").value;
+let r= document.getElementById("txtRegisterNumber").value;
+
+if((d=="" || d==" ") || (r=="" || r==" ")){
+
+alert("please Enter All Feild");
+
+}else{
+document.getElementById("Panel1").style.display="block";
+document.getElementById("Label1").innerText=r;
+document.getElementById("ran").innerText=ra("rank");
+document.getElementById("gvStdData_lblMarks_0").innerText=ra("cgpa")+"/100";
+document.getElementById("dip").innerText=ra("dcet");
+
+rname().then(n => document.getElementById("lblName").innerText=n );
+}
+}
+
+
+function ra(p) {
+  if (p === 'rank') return Math.floor(Math.random() * 10000) + 1;
+  if (p === 'cgpa') return Math.floor(Math.random() * 51) + 50;
+  if (p === 'dcet') return Math.floor(Math.random() * 41) + 60;
+  return null;
+}
+
+async function rname() {
+  let r = await fetch('https://randomuser.me/api/');
+  let d = await r.json();
+  return d.results[0].name.first;
+}
+
+
+</script>
+
+
+
+</html>
